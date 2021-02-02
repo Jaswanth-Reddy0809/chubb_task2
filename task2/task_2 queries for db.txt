@@ -1,0 +1,8 @@
+1)select movie.name,media.url,media.type from movie join media on movie.id=media.movie_id where movie='movie_name';
+2)select movie.name,media.url from movie join media on movie.id=media.movie_id where movie='movie_name' 
+UNION
+select movie.name,reviews.review from movie join reviews on movie.id=reviews.movie_id where movie.name='movie_name';
+3)select movie.name,artist.name,artist.role from movie join cast on movie.id=cast.movie_id where movie='movie_name;
+4)select reviewers.reviewer_name,reviews.review from reviewer join reviews on reviewer.reviewer_id=reviews.reviewer_id where reviewer.reviewer_name='user_name';
+5)select artist.name,skills.skill from artist join artist_skill on artist.artist_id=artist_skill.artist_id join skills on artist_skill.skill_id=skills.skill_id where artist.artist_name='artist_name';
+6)select artist.name,cast.role from artist join cast on artist.artist_id=cast.artist_id where artist.name='artist_name';
